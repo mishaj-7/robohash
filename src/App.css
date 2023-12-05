@@ -11,6 +11,14 @@ body {
   min-height: 100vh;
 }
 
+/* styles.css or your preferred CSS file */
+.heading {
+  color: #ffffff; /* Change the color to your preference */
+  font-size: 2rem; /* Adjust the font size */
+  /* Add any other custom styles you want */
+}
+
+
 .container {
   text-align: center;
   padding: 20px;
@@ -46,7 +54,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .card-img-top {
