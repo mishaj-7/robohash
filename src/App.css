@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 10px;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, violet, indigo, red, green, yellow );
+  background: linear-gradient(to left, violet, blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@ body {
 }
 
 .card {
-  background: #033814;
+  background: #89cc9e;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -54,7 +54,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 
 .card-img-top {

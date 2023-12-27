@@ -1,16 +1,13 @@
 
-const arr =[];
+let str = "                hai there its me mishaj here:     "
+
+console.log(str);
 
 
-fetch('https://jsonplaceholder.typicode.com/users/')
-      .then((data)=> {
-      return data.json();
-      })
-      .then((data)=> {
-            //console.log(data)
-            arr.push(data)
-      })
-      
-     setTimeout(() => {
-      
-     },5000);
+
+
+const trimmedStr = str.trim();
+
+console.log(trimmedStr); // Output: "Hello, World!"
+
+     

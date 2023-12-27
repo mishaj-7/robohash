@@ -39,9 +39,11 @@ class App extends Component {
 
     // Filter robots based on the search input
     const filteredRobots = robots.filter(robot => {
+      
       // console.log(robot)
-       return robot.name.toLowerCase().includes(searchField.toLowerCase());    {/* both side name convert tolowercase then check it inside the array if yes return true or false by includes() if true it inside the new array created filter then render using that array using map  */}
+       return  robot.name.toLowerCase().includes(searchField.toLowerCase());  {/* both side name convert tolowercase then check it inside the array if yes return true or false by includes() if true it inside the new array created filter then render using that array using map  */}
       });
+      
 
     return (
       <>
@@ -61,8 +63,8 @@ class App extends Component {
               this.handleSearchChange(event);
             }} // this is call back that onChange call it self when change make inside the input field then event contain value of inside the box what we type then call search function 
           />
-
-          {/* Display robot cards */}
+          
+          {/* Display robot cards */} 
           <div className="row">
             { filteredRobots.map(robot => {
 
@@ -74,7 +76,7 @@ class App extends Component {
                     
                     <div> {/* this is robot image div */}
                     <img
-                      src={`https://robohash.org/${robot.id}?set=set3`}
+                      src={`https://robohash.org/${robot.id+100}?set=set3`}
                       alt={robot.name}
                       className="card-img-top"
                     />
@@ -83,6 +85,7 @@ class App extends Component {
                     <div className="card-body">
                       <h5 className="card-title">{robot.name}</h5>
                       <p className="card-text">{robot.email}</p> 
+                      <p>hai</p>
                     </div>
 
                   </div>
